@@ -7,9 +7,11 @@ import Quiz from './pages/Quiz';
 import Results from './pages/Results';
 import News from './pages/News';
 
+
 function App() {
   return (
     <BrowserRouter>
+    
     <ThemeProvider theme={theme}>
     <Layout>
     <Routes>

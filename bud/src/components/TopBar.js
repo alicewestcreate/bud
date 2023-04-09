@@ -13,8 +13,7 @@ const TopBar = () => {
             <img src={logo} alt="Logo" width="30" height="30"/>
             <Typography
               variant="h3"
-              component="h3"
-              color="secondary">
+              component="h3">
               bud
             </Typography>
           </Box>
