@@ -1,7 +1,88 @@
 [
-    {
+    {   "index" : 0,
         "question": "Looking for something robust, and can hold its own?",
-        "img": "robustCatus.webp" ,
+        "img": "robustCactus.webp" ,
+        "filter": {
+            "left": {
+                "btnTxt": "meh",
+                "property": "Growth",
+                "searchVal": "Fast"
+            },
+            "right": {
+                "btnTxt": "gimme",
+                "property": "Appeal",
+                "searchVal": "Robustness"
+            }
+        }
+    },
+    {   "index" : 1,
+        "question": "A fellow sunseeker to catch the rays with?",
+        "img": "sunSeeker.webp" ,
+        "filter": {
+            "left": {
+                "btnTxt": "meh",
+                "property": "Growth",
+                "searchVal": "Fast"
+            },
+            "right": {
+                "btnTxt": "gimme",
+                "property": "Appeal",
+                "searchVal": "Robustness"
+            }
+        }
+    },
+    {   "index" : 2,
+        "question": "Or more chilled, and likes to hang in the shade?",
+        "img": "shadyLeaves.webp" ,
+        "filter": {
+            "left": {
+                "btnTxt": "meh",
+                "property": "Growth",
+                "searchVal": "Fast"
+            },
+            "right": {
+                "btnTxt": "gimme",
+                "property": "Appeal",
+                "searchVal": "Robustness"
+            }
+        }
+    },
+    {   "index" : 3,
+        "question": "Maybe something more on the wild side?",
+        "img": "wildFlower.webp" ,
+        "filter": {
+            "left": {
+                "btnTxt": "meh",
+                "property": "Growth",
+                "searchVal": "Fast"
+            },
+            "right": {
+                "btnTxt": "gimme",
+                "property": "Appeal",
+                "searchVal": "Robustness"
+            }
+        }
+    },
+    {   "index" : 4,
+        "question": "Perhaps more of a conversation starter? ",
+        "img": "conversationStart.webp" ,
+        "filter": {
+            "left": {
+                "btnTxt": "meh",
+                "property": "Growth",
+                "searchVal": "Fast"
+            },
+            "right": {
+                "btnTxt": "gimme",
+                "property": "Appeal",
+                "searchVal": "Robustness"
+            }
+        }
+    },    
+    
+    {   "index" : 5,
+        "question": "Something a little sensational for the nose?",
+        "img": "fragrantRose.webp" ,
         "filter": {
             "left": {
                 "btnTxt": "meh",

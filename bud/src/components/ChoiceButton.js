@@ -1,9 +1,15 @@
 import { Button } from '@mui/material';
 import React from 'react';
 
-const ChoiceButton = ({color, text}) => {
+const ChoiceButton = ({color, text, showNextQuestion}) => {
+
+  const HandleClick = () => {
+    showNextQuestion()
+  }
+
     return (
         <Button
+        onClick={()=> HandleClick()}
         variant="contained"
         color={color}
         sx={{ flex: 1,
