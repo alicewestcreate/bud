@@ -8,7 +8,6 @@ import QuestionHeading from "../components/QuestionHeading";
 import ChoiceBtnDiv from "../components/ChoiceBtnDiv";
 import ChoiceButton from "../components/ChoiceButton";
 
-// import backgroundImage from "../components/images/robustCatus.webp";
 import questions from "../data/questions.json";
 import { Button } from "@mui/material";
 import { Box } from "@mui/system";
