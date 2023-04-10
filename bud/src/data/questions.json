@@ -1,0 +1,18 @@
+[
+    {
+        "question": "Looking for something robust, and can hold its own?",
+        "img": "robustCatus.webp" ,
+        "filter": {
+            "left": {
+                "btnTxt": "meh",
+                "property": "Growth",
+                "searchVal": "Fast"
+            },
+            "right": {
+                "btnTxt": "gimme",
+                "property": "Appeal",
+                "searchVal": "Robustness"
+            }
+        }
+    }
+]
