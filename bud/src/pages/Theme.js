@@ -9,6 +9,9 @@ const Theme = createTheme({
     secondary: {
       main: '#FE267B',
     },
+    third: {
+      main:" #2662FE",
+    },
     text: {
         primary: '#000000', // set the primary text color
         secondary: '#ffffff', // set the secondary text color

@@ -2,7 +2,7 @@ import { Box } from '@mui/system';
 import React from 'react';
 
 const BackgroundGradient = ({children}) => {
-    const gradient = "linear-gradient(45deg, #F2E572 30%, #FBD07C 90%)";
+    const gradient = "linear-gradient(-135deg, #F2E572 30%, #FBD07C 60%)";
 
     return (
         <Box
@@ -10,7 +10,7 @@ const BackgroundGradient = ({children}) => {
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        sx={{ backgroundImage: gradient, flexGrow:1}}
+        sx={{ backgroundImage: gradient, height: "calc(100vh)", width:"100vw"}}
       >
         {children}
       </Box>

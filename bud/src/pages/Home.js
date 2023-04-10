@@ -1,8 +1,10 @@
 import { Typography, Button } from "@mui/material";
+import { Link as RouterLink } from 'react-router-dom';
 import React from "react";
 import BackgroundGradient from "../components/BackgroundGradient";
 
 const Home = () => {
+
 
   return (
     <BackgroundGradient>
@@ -10,7 +12,7 @@ const Home = () => {
         find your new bud
       </Typography>
 
-      <Button variant="contained" color="secondary" sx={{ borderRadius: '20px', textTransform: "none" }}>
+      <Button component={RouterLink} to="/quiz" variant="contained" color="secondary" sx={{ borderRadius: '20px', textTransform: "none" }}>
         take the quiz
       </Button>
    </BackgroundGradient> 

@@ -6,7 +6,7 @@ import logo from "./images/logo.png";
 const TopBar = () => {
   return (
     <>
-      <AppBar position="static" color="" sx={{ boxShadow: "none" }}>
+      <AppBar position="fixed" color="" sx={{ boxShadow: "none" }}>
         <Toolbar sx={{ height: "56px", bgcolor: "primary.main" }}></Toolbar>
         <Toolbar sx={{ backgroundColor: "white" }}>
           <Box sx={{ display: "flex", alignItems: "flex-end" }}>
