@@ -35,12 +35,12 @@ const Quiz = () => {
   const Questions = ({showNextQuestion }) => {
     return (
       <>
-        <ContainerForImage>
+        <ContainerForImage parent={"questions"} >
 
-          <ImageBox imagePath = {questions[questIndex].img} src={""} alt={"Cactus"} />
+          <ImageBox imagePath = {questions[questIndex].img} alt={"Cactus"} />
         </ContainerForImage>
 
-        <TextDiv>
+        <TextDiv parent={"questions"}>
           <QuestionHeading question={questions[questIndex].question} />
 
           <ChoiceBtnDiv>
@@ -63,7 +63,7 @@ const Quiz = () => {
   const ResultsButton = () => {
     return (
     <Box  width="100vw" height="calc(100vh - 250px)" sx={{display:"flex", alignItems: "center", justifyContent: "center"}}>
-    <Button variant="contained" color="primary">Results</Button>
+    <Button variant="contained" color="primary">view your buds</Button>
     </Box>
     )
 
@@ -71,7 +71,7 @@ const Quiz = () => {
 
   return (
 
-  <PageContainer>
+  <PageContainer parent={"question"}>
   {showQuestion && (<Questions 
   showNextQuestion = {showNextQuestion}
 

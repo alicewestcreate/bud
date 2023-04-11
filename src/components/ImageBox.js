@@ -28,7 +28,9 @@ const ImageBox = ({alt, imagePath}) => {
           alt={alt}
           sx={{
             objectFit: "cover",
-            width: "100%",
+            width: "95vw",
+            verticalAlign: "bottom"
+
           }}
         />
 

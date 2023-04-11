@@ -12,6 +12,10 @@ const Theme = createTheme({
     third: {
       main:" #2662FE",
     },
+    neutrals: {
+      black: "#0E0E0E",
+      white: "#ffffff",
+    },
     text: {
         primary: '#000000', // set the primary text color
         secondary: '#ffffff', // set the secondary text color
@@ -34,7 +38,7 @@ const Theme = createTheme({
       fontSize: '2rem',
       fontWeight: 600,
     },
-  }
+  },
 });
 
 export default Theme;

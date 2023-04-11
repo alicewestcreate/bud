@@ -11,9 +11,7 @@ import News from './pages/News';
 function App() {
   return (
     <BrowserRouter>
-    
     <ThemeProvider theme={theme}>
-    <Layout>
     <Routes>
       <Route path="/" element={<Layout />}/>
         <Route index element={<Home />}/>
@@ -21,7 +19,7 @@ function App() {
         <Route path="results" element={<Results/>}/>
         <Route path="news" element={<News/>}/>
     </Routes>
-    </Layout>
+    <Layout/>
     </ThemeProvider>
     </BrowserRouter>
    

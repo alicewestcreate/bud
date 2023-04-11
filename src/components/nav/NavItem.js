@@ -8,6 +8,7 @@ const NavItem = () => {
     <Toolbar sx={{display: 'flex', justifyContent: 'space-evenly' }}>
     <Button component={RouterLink} to="/" color="inherit">Home</Button>
     <Button component={RouterLink} to="/quiz" color="inherit">Quiz</Button>
+    <Button component={RouterLink} to="/results" color="inherit">Results</Button>
     <Button component={RouterLink} to="/news" color="inherit">News</Button>
   </Toolbar>
 );
