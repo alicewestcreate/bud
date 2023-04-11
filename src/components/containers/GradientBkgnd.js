@@ -1,7 +1,7 @@
 import { Box } from '@mui/system';
 import React from 'react';
 
-const BackgroundGradient = ({children}) => {
+const GradientBkgnd = ({children}) => {
     const gradient = "linear-gradient(-135deg, #F2E572 30%, #FBD07C 60%)";
 
     return (
@@ -17,4 +17,4 @@ const BackgroundGradient = ({children}) => {
     );
 }
 
-export default BackgroundGradient;
+export default GradientBkgnd;

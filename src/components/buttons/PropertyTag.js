@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import React from "react";
-import CustomButton from "../pages/CustomButton";
+import CustomButton from "../../themes/CustomButton";
 
 const PropertyTag = ({property}) => {
   return (

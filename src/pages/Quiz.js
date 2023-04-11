@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-import PageContainer from "../components/PageContainer";
-import ContainerForImage from "../components/ContainerForImage";
-import ImageBox from "../components/ImageBox";
-import TextDiv from "../components/TextDiv";
-import QuestionHeading from "../components/QuestionHeading";
-import ChoiceBtnDiv from "../components/ChoiceBtnDiv";
-import ChoiceButton from "../components/ChoiceButton";
+import PageContainer from "../components/containers/PageContainer";
+import ContainerForImage from "../components/containers/ContainerForImage";
+import ImageBox from "../components/imagesTags/ImageBox";
+import TextDiv from "../components/containers/TextDiv";
+import QuestionHeading from "../components/copy/QuestionHeading";
+import ChoiceBtnDiv from "../components/containers/ChoiceBtnDiv";
+import ChoiceButton from "../components/buttons/ChoiceButton";
 
 import questions from "../data/questions.json";
 import { Button } from "@mui/material";

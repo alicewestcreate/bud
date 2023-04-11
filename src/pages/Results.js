@@ -1,13 +1,13 @@
 import { Typography, Button } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState } from "react";
-import ChoiceBtnDiv from "../components/ChoiceBtnDiv";
-import ChoiceButton from "../components/ChoiceButton";
-import ContainerForImage from "../components/ContainerForImage";
-import ImageBox from "../components/ImageBox";
-import PageContainer from "../components/PageContainer";
-import PropertyTag from "../components/PropertyTag";
-import TextDiv from "../components/TextDiv";
+import ChoiceBtnDiv from "../components/containers/ChoiceBtnDiv";
+import ChoiceButton from "../components/buttons/ChoiceButton";
+import ContainerForImage from "../components/containers/ContainerForImage";
+import ImageBox from "../components/imagesTags/ImageBox";
+import PageContainer from "../components/containers/PageContainer";
+import PropertyTag from "../components/buttons/PropertyTag";
+import TextDiv from "../components/containers/TextDiv";
 import dummyInfo from "../data/dummyApi.json";
 const Results = () => {
 

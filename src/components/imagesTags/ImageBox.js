@@ -9,7 +9,7 @@ const ImageBox = ({alt, imagePath}) => {
 
   useEffect(() => {
     async function fetchImage(imagePath) {
-      const imageFetched = await import(`../components/images/${imagePath}`)
+      const imageFetched = await import(`../../images/${imagePath}`)
       const imageUrl = imageFetched.default
       setImage(imageUrl)
     }

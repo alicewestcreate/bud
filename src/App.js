@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from './pages/Theme';
+import theme from './themes/Theme';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import Quiz from './pages/Quiz';
