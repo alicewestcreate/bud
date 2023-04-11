@@ -1,5 +1,5 @@
-import { Box } from '@mui/system';
 import React, { useEffect , useState } from 'react';
+import { Box } from '@mui/system';
 
 
 
@@ -17,7 +17,7 @@ const ImageBox = ({alt, imagePath}) => {
     fetchImage(imagePath)
   }, 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [])
+    [imagePath])
   
 
 
