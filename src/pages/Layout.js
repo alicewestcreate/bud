@@ -2,7 +2,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import { Outlet } from "react-router-dom";
 import NavBar from "../components/nav/NavBar";
-import TopBar from "../components/TopBar";
+import TopBar from "../components/nav/TopBar";
 
 
 const Layout = (props) => {
