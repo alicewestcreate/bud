@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Box } from "@mui/system";
 import ContainerForImage from "../../components/containers/ContainerForImage";
 import ImageBox from "../../components/imagesTags/ImageBox";
 import TextDiv from "../../components/containers/TextDiv";
