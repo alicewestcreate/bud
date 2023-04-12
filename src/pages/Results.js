@@ -10,26 +10,26 @@ const Results = () => {
 
 
   
-//   let cateogory = plant.map((pla) => pla["Color of leaf"])
-//   console.log(cateogory);
+  let cateogory = plant.map((pla) => pla["Light tolered"])
+  console.log(cateogory);
 
-//   const uniqueCat = Array.from(new Set(cateogory))
+  const uniqueCat = Array.from(new Set(cateogory))
 
-//   console.log(uniqueCat);
+  console.log(uniqueCat);
 
 
-// let count = 0;
+let count = 0;
 
-// const filteredArr = cateogory.filter((item) => {
-//   if (item === null) {
-//     count++; // increment count if item is null
-//     return false; // remove null item from filtered array
-//   }
-//   return true; // keep non-null item in filtered array
-// });
+const filteredArr = cateogory.filter((item) => {
+  if (item === null) {
+    count++; // increment count if item is null
+    return false; // remove null item from filtered array
+  }
+  return true; // keep non-null item in filtered array
+});
 
-// console.log(filteredArr); // [1, 3, 4, 5]
-// console.log(count); // 3 (number of null items)
+console.log(filteredArr); // [1, 3, 4, 5]
+console.log(count); // 3 (number of null items)
 
   
 

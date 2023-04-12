@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material";
 import React from "react";
 import FeatureCopy from "../copy/FeatureCopy";
 import FeatureHeading from "../copy/FeatureHeading";
