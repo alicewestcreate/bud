@@ -11,7 +11,7 @@ const Questions = ({ showNextQuestion, questIndex }) => {
   return (
     <>
       <ContainerForImage parent={"questions"}>
-        <ImageBox imagePath={questions[questIndex].img} alt={"Cactus"} />
+        <ImageBox parent={"questions"} imagePath={questions[questIndex].img} alt={"Cactus"} />
       </ContainerForImage>
 
       <TextDiv parent={"questions"}>

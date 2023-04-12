@@ -2,10 +2,10 @@ import React from 'react';
 import { Box } from '@mui/system';
 
 
-const InfoButton = ({displayProperties, setDisplayProperties }) => {
+const InfoButton = ({displayFeatures, setDisplayFeatures }) => {
 
     const handleClick = () => {
-        setDisplayProperties(!displayProperties);
+      setDisplayFeatures(!displayFeatures);
       };
     
     return (

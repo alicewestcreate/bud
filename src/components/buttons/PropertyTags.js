@@ -4,14 +4,11 @@ import CustomButton from "../../themes/CustomButton";
 
 const PropertyTags = ({ properties  }) => {
 
-
   const PropertyTag = () =>
   properties.map((property, index) => ( <CustomButton variant="outlined" type="tag" key={index}>
     {property}
   </CustomButton>
   ));
-
-
 
 
   return (

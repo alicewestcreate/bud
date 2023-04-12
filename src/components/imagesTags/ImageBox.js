@@ -1,40 +1,44 @@
-import React, { useEffect , useState } from 'react';
-import { Box } from '@mui/system';
+import React, { useEffect, useState } from "react";
+import { Box } from "@mui/system";
 
-
-
-const ImageBox = ({alt, imagePath}) => {
+const ImageBox = ({ alt, imagePath, parent = "questions" }) => {
 
   const [currentImage, setImage] = useState();
 
-  useEffect(() => {
-    async function fetchImage(imagePath) {
-      const imageFetched = await import(`../../images/${imagePath}`)
-      const imageUrl = imageFetched.default
-      setImage(imageUrl)
-    }
-  
-    fetchImage(imagePath)
-  }, 
+  useEffect(
+    () => {
+      if (parent === "questions") {
+        async function fetchImage(imagePath) {
+          const imageFetched = await import(`../../images/${imagePath}`);
+          const imageUrl = imageFetched.default;
+          setImage(imageUrl);
+        }
+        fetchImage(imagePath);
+      }
+    },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [imagePath])
-  
+    [imagePath]
+  );
 
+  const src =
+    parent === "questions"
+      ? currentImage
+      : parent === "results"
+      ? imagePath
+      : undefined;
 
-    return (
-        <Box
-          component="img"
-          src = {currentImage}
-          alt={alt}
-          sx={{
-            objectFit: "cover",
-            width: "95vw",
-            verticalAlign: "bottom"
-
-          }}
-        />
-
-    );
-}
+  return (
+    <Box
+      component="img"
+      src={src}
+      alt={alt}
+      sx={{
+        objectFit: "cover",
+        width: "95vw",
+        verticalAlign: "bottom",
+      }}
+    />
+  );
+};
 
 export default ImageBox;

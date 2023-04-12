@@ -3,37 +3,39 @@ import { Box } from "@mui/system";
 import ContainerForImage from "../../components/containers/ContainerForImage";
 import ImageBox from "../../components/imagesTags/ImageBox";
 import TextDiv from "../../components/containers/TextDiv";
-import PlantName from "../../components/copy/PlantName"
+import PlantName from "../../components/copy/PlantName";
 import InfoButton from "../../components/buttons/InfoButton";
 import PropertyTags from "../../components/buttons/PropertyTags";
 import ChoiceBtnDiv from "../../components/containers/ChoiceBtnDiv";
-import ChoiceButton from "../../components/buttons/ChoiceButton";
-import Features from "./Features";
+import LikeDislikeButton from "../../components/buttons/LikeDislikeButton";
 
-const ResultsCard = ({ dummyInfo }) => {
-  const [displayProperties, setDisplayProperties] = useState(false);
+import Features from "./Features";
+import getName from "../majorfunctions/getName"
+
+const ResultsCard = ({ dummyInfo, plantIndex, showNextCard}) => {
+
+  
+  const [displayFeatures, setDisplayFeatures] = useState(false);
 
 
 
   return (
     <>
       <ContainerForImage parent={"results"}>
-        <ImageBox imagePath={dummyInfo[0].image} alt={""} />
+        <ImageBox parent={"results"} imagePath={plantIndex.Img} alt={""} />
       </ContainerForImage>
-
       <TextDiv parent={"results"}>
-        <PlantName dummyInfo={dummyInfo[0].name}/>
+        <PlantName dummyInfo={getName(plantIndex)} />
         <InfoButton
-          setDisplayProperties={setDisplayProperties}
-          displayProperties={displayProperties}
+          setDisplayFeatures={setDisplayFeatures}
+          displayFeatures={displayFeatures}
         />
-          <PropertyTags properties ={dummyInfo[0].properties}/>
-    
-        {displayProperties && <Features />}
+        <PropertyTags properties={dummyInfo[0].properties} />
+        {displayFeatures && <Features plantIndex={plantIndex}/>}
 
         <ChoiceBtnDiv>
-          <ChoiceButton text={"yes"}></ChoiceButton>
-          <ChoiceButton text={"no"}></ChoiceButton>
+          <LikeDislikeButton showNextCard={showNextCard} text={"yes"}></LikeDislikeButton>
+          <LikeDislikeButton showNextCard={showNextCard} text={"no"} ></LikeDislikeButton>
         </ChoiceBtnDiv>
       </TextDiv>
     </>
