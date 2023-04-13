@@ -10,6 +10,7 @@ import QuizContext from "./QuizContext";
 
 const Quiz = () => {
 
+// eslint-disable-next-line no-unused-vars
   const { collectedVariables, setCollectedVariables } = useContext(QuizContext);
   
   let [questIndex, setQuestion] = useState(0); // Tracks which index to render from the questions.json file.
