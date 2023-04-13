@@ -17,13 +17,21 @@ const ContainerForImage = ({children, parent = "questions"}) => {
   ? `${"100vw"}`
   : undefined;
 
+  const position = 
+    parent === "questions"
+    ? "fixed"
+    : parent === "results"
+    ? ""
+    : undefined;
+
+
 
 
     return (
         <Box
         sx={{
           margin: "10px",
-          // position: "fixed",
+          position,
           borderRadius,
           height,
           overflow: "hidden",
