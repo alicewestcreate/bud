@@ -18,7 +18,7 @@ const PageContainer = ({children, parent = "questions"}) => {
           display: "flex",
           alignContent: "center",
           flexDirection: "column",
-          marginTop: "112px",
+          marginTop: "56px",
           height,
         }}
       >
