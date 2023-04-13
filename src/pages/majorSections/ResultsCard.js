@@ -11,8 +11,10 @@ import LikeDislikeButton from "../../components/buttons/LikeDislikeButton";
 import Features from "./Features";
 import getName from "../majorfunctions/getName";
 
-const ResultsCard = ({ dummyInfo, plantIndex, showNextCard }) => {
+const ResultsCard = ({ plantIndex, showNextCard }) => {
   const [displayFeatures, setDisplayFeatures] = useState(false);
+
+  console.log("matched on", plantIndex);
 
   return (
     <>
@@ -25,7 +27,7 @@ const ResultsCard = ({ dummyInfo, plantIndex, showNextCard }) => {
           setDisplayFeatures={setDisplayFeatures}
           displayFeatures={displayFeatures}
         />
-        <PropertyTags properties={dummyInfo[0].properties} />
+        <PropertyTags properties={plantIndex.matchdOn} />
         {displayFeatures && <Features plantIndex={plantIndex} />}
       </TextDiv>
 

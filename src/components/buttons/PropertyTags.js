@@ -3,6 +3,7 @@ import React from "react";
 import CustomButton from "../../themes/CustomButton";
 
 const PropertyTags = ({ properties  }) => {
+  console.log("prop tag",properties);
 
   const PropertyTag = () =>
   properties.map((property, index) => ( <CustomButton variant="outlined" type="tag" key={index}>

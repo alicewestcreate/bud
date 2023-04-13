@@ -32,6 +32,7 @@ const Questions = ({ showNextQuestion, questIndex, storePreference }) => {
           text={questions[questIndex].filter.left.btnTxt}
           property={questions[questIndex].filter.left.property}
           searchVal={questions[questIndex].filter.left.searchVal}
+          feature={questions[questIndex].filter.left.feature}
         />
         <ChoiceButton
             showNextQuestion={showNextQuestion}
@@ -40,6 +41,8 @@ const Questions = ({ showNextQuestion, questIndex, storePreference }) => {
             text={questions[questIndex].filter.right.btnTxt}
             property={questions[questIndex].filter.right.property}
             searchVal={questions[questIndex].filter.right.searchVal}
+            feature={questions[questIndex].filter.right.feature}
+
           />
       </ChoiceBtnDiv>
     </>
