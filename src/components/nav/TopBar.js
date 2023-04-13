@@ -7,7 +7,6 @@ const TopBar = () => {
   return (
     <>
       <AppBar position="fixed" color="" sx={{ boxShadow: "none" }}>
-        <Toolbar sx={{ height: "56px", bgcolor: "primary.main" }}></Toolbar>
         <Toolbar sx={{ backgroundColor: "white" }}>
           <Box sx={{ display: "flex", alignItems: "flex-end" }}>
             <img src={logo} alt="Logo" width="30" height="30"/>
