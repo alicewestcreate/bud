@@ -6,7 +6,7 @@ const TextDiv = ({children, parent}) => {
   const parentValues = {
     questions: {
       padding: "10vw",
-      bottom: 30,
+      bottom: 100,
       width: "80vw",
       position: "fixed",
     },

@@ -33,13 +33,12 @@ const ResultsCard = ({ dummyInfo, plantIndex, showNextCard}) => {
         <PropertyTags properties={dummyInfo[0].properties} />
     
         {displayFeatures && <Features plantIndex={plantIndex}/>}
+      </TextDiv>
 
-
-        <ChoiceBtnDiv>
+      <ChoiceBtnDiv parent={"results"}>
           <LikeDislikeButton showNextCard={showNextCard} text={"yes"}></LikeDislikeButton>
           <LikeDislikeButton showNextCard={showNextCard} text={"no"} ></LikeDislikeButton>
         </ChoiceBtnDiv>
-      </TextDiv>
     </>
   );
 };
