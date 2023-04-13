@@ -9,14 +9,10 @@ import ChoiceBtnDiv from "../../components/containers/ChoiceBtnDiv";
 import LikeDislikeButton from "../../components/buttons/LikeDislikeButton";
 
 import Features from "./Features";
-import getName from "../majorfunctions/getName"
+import getName from "../majorfunctions/getName";
 
-const ResultsCard = ({ dummyInfo, plantIndex, showNextCard}) => {
-
-  
+const ResultsCard = ({ dummyInfo, plantIndex, showNextCard }) => {
   const [displayFeatures, setDisplayFeatures] = useState(false);
-
-
 
   return (
     <>
@@ -29,16 +25,20 @@ const ResultsCard = ({ dummyInfo, plantIndex, showNextCard}) => {
           setDisplayFeatures={setDisplayFeatures}
           displayFeatures={displayFeatures}
         />
-        
         <PropertyTags properties={dummyInfo[0].properties} />
-    
-        {displayFeatures && <Features plantIndex={plantIndex}/>}
+        {displayFeatures && <Features plantIndex={plantIndex} />}
       </TextDiv>
 
       <ChoiceBtnDiv parent={"results"}>
-          <LikeDislikeButton showNextCard={showNextCard} text={"yes"}></LikeDislikeButton>
-          <LikeDislikeButton showNextCard={showNextCard} text={"no"} ></LikeDislikeButton>
-        </ChoiceBtnDiv>
+        <LikeDislikeButton
+          showNextCard={showNextCard}
+          text={"no"}
+        ></LikeDislikeButton>
+        <LikeDislikeButton
+          showNextCard={showNextCard}
+          text={"yes"}
+        ></LikeDislikeButton>
+      </ChoiceBtnDiv>
     </>
   );
 };
