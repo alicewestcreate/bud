@@ -3,7 +3,7 @@ import React from "react";
 
 const FeatureCopy = ({ copy }) => {
   return (
-    <Typography variant="body1" component={"p"}>
+    <Typography variant="body1" component={"p"} sx={{px:2}}>
       {copy}
     </Typography>
   );

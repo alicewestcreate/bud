@@ -29,8 +29,11 @@ const ResultsCard = ({ dummyInfo, plantIndex, showNextCard}) => {
           setDisplayFeatures={setDisplayFeatures}
           displayFeatures={displayFeatures}
         />
+        
         <PropertyTags properties={dummyInfo[0].properties} />
+    
         {displayFeatures && <Features plantIndex={plantIndex}/>}
+
 
         <ChoiceBtnDiv>
           <LikeDislikeButton showNextCard={showNextCard} text={"yes"}></LikeDislikeButton>
