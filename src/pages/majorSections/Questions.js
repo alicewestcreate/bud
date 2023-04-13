@@ -16,8 +16,8 @@ const Questions = ({ showNextQuestion, questIndex }) => {
 
       <TextDiv parent={"questions"}>
         <QuestionHeading question={questions[questIndex].question} />
-
-        <ChoiceBtnDiv>
+      </TextDiv>
+      <ChoiceBtnDiv parent={"questions"}>
           <ChoiceButton
             showNextQuestion={showNextQuestion}
             color="third"
@@ -29,7 +29,6 @@ const Questions = ({ showNextQuestion, questIndex }) => {
             text={questions[0].filter.right.btnTxt}
           />
         </ChoiceBtnDiv>
-      </TextDiv>
     </>
   );
 };
