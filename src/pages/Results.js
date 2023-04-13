@@ -1,20 +1,27 @@
 import React, {useState, useContext} from "react";
 import dummyInfo from "../data/dummyApi.json";
-import plant from "../data/plants.json"
+import plants from "../data/plants.json"
 import ResultsCard from "./majorSections/ResultsCard";
 import PageContainer from "../components/containers/PageContainer";
 import QuizContext from "./QuizContext";
+import { filterPreferences } from "./majorfunctions/filterPreferences";
 
 const Results = () => {
-  const { collectedVariables } = useContext(QuizContext);
 
+  const { collectedVariables } = useContext(QuizContext);
   let [resultIndex, setResultIndex] = useState(0)
 
-  console.log(collectedVariables);
+  const { allProperties, allValues, allFeatures } = collectedVariables
+  console.log(allProperties, allValues);
+
+  const matchedResults = filterPreferences(plants, allProperties, allValues, allFeatures)
 
   const storeInFavorites = () => {
     console.log("stored");
   }
+
+  console.log(matchedResults);
+  console.log(matchedResults[0].matchdOn);
 
 
   const showNextCard = (text) => {
@@ -23,14 +30,13 @@ const Results = () => {
     if (text === "yes") {
       storeInFavorites()
     }
-
   }
 
-
+  console.log("matched index",matchedResults[resultIndex]);
   return (
 
     <PageContainer parent={"results"}>
-    <ResultsCard dummyInfo = {dummyInfo} plantIndex = {plant[resultIndex]} showNextCard = {showNextCard}></ResultsCard>
+    <ResultsCard dummyInfo = {dummyInfo} plantIndex={matchedResults[resultIndex]} showNextCard = {showNextCard}></ResultsCard>
     </PageContainer>
   );
 };

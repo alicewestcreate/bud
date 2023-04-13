@@ -6,12 +6,14 @@
             "left": {
                 "btnTxt": "meh",
                 "property": null,
-                "searchVal": null
+                "searchVal": null, 
+                "feature": "No Feature"
             },
             "right": {
                 "btnTxt": "gimme",
-                "property": "1Appeal",
-                "searchVal": "Robustness"
+                "property": "Appeal",
+                "searchVal": "Robustness",
+                "feature": "Sturdy"
             }
         }
     },
@@ -22,12 +24,14 @@
             "left": {
                 "btnTxt": "meh",
                 "property": null,
-                "searchVal": null
+                "searchVal": null,
+                "feature": "No Feature"
             },
             "right": {
                 "btnTxt": "gimme",
-                "property": "2Light ideal",
-                "searchVal": "Full sun (+21,500 lux /+2000 fc )"
+                "property": "Light ideal",
+                "searchVal": "Full sun (+21,500 lux /+2000 fc )",
+                "feature": "Sunshine"
             }
         }
     },
@@ -38,12 +42,14 @@
             "left": {
                 "btnTxt": "meh",
                 "property": null,
-                "searchVal": null
+                "searchVal": null,
+                "feature": "No Feature"
             },
             "right": {
                 "btnTxt": "gimme",
-                "property": "3Light tolered",
-                "searchVal": "Diffuse light ( Less than 5,300 lux / 500 fc)"
+                "property": "Light tolered",
+                "searchVal": "Diffuse light ( Less than 5,300 lux / 500 fc)",
+                "feature": "Shade Dweller"
             }
         }
     },
@@ -54,12 +60,14 @@
             "left": {
                 "btnTxt": "meh",
                 "property": null,
-                "searchVal": null
+                "searchVal": null,
+                "feature": "No Feature"
             },
             "right": {
                 "btnTxt": "gimme",
-                "property": "4Blooming season",
-                "searchVal": "Sporadic"
+                "property": "Blooming season",
+                "searchVal": "Sporadic",
+                "feature": "Wild"
             }
         }
     },
@@ -70,12 +78,14 @@
             "left": {
                 "btnTxt": "meh",
                 "property": "Growth",
-                "searchVal": "Fast"
+                "searchVal": "Fast",
+                "feature": "No Feature"
             },
             "right": {
                 "btnTxt": "gimme",
-                "property": "5Appeal",
-                "searchVal": "Flower" 
+                "property": "Appeal",
+                "searchVal": "Flower",
+                "feature": "Flower"
             }
         }
     },    
@@ -87,12 +97,14 @@
             "left": {
                 "btnTxt": "meh",
                 "property": null,
-                "searchVal": null
+                "searchVal": null,
+                "feature": "No Feature"
             },
             "right": {
                 "btnTxt": "gimme",
-                "property": "6Perfume",
-                "searchVal": "Delicate, comes from the Flowers"
+                "property": "Perfume",
+                "searchVal": "Delicate, comes from the Flowers",
+                "feature": "Perfume"
             }
         }
     }
