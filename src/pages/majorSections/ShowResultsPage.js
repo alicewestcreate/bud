@@ -5,9 +5,10 @@ import SingleButton from "../../components/buttons/SingleButton";
 
 
 const ShowResultsPage = () => {
+
     return (
       <GradientBkgnd>
-        <SingleButton/>
+        <SingleButton />
       </GradientBkgnd>
     );
   };

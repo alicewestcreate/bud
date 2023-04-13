@@ -7,28 +7,41 @@ import ChoiceBtnDiv from "../../components/containers/ChoiceBtnDiv";
 import ChoiceButton from "../../components/buttons/ChoiceButton";
 import questions from "../../data/questions.json";
 
-const Questions = ({ showNextQuestion, questIndex }) => {
+const Questions = ({ showNextQuestion, questIndex, storePreference }) => {
+
+
   return (
     <>
       <ContainerForImage parent={"questions"}>
-        <ImageBox parent={"questions"} imagePath={questions[questIndex].img} alt={"Cactus"} />
+        <ImageBox
+          parent={"questions"}
+          imagePath={questions[questIndex].img}
+          alt={"Cactus"}
+        />
       </ContainerForImage>
 
       <TextDiv parent={"questions"}>
         <QuestionHeading question={questions[questIndex].question} />
       </TextDiv>
+
       <ChoiceBtnDiv parent={"questions"}>
-          <ChoiceButton
+        <ChoiceButton
+          showNextQuestion={showNextQuestion}
+          storePreference={storePreference}
+          color="third"
+          text={questions[questIndex].filter.left.btnTxt}
+          property={questions[questIndex].filter.left.property}
+          searchVal={questions[questIndex].filter.left.searchVal}
+        />
+        <ChoiceButton
             showNextQuestion={showNextQuestion}
-            color="third"
-            text={questions[0].filter.left.btnTxt}
-          />
-          <ChoiceButton
-            showNextQuestion={showNextQuestion}
+            storePreference={storePreference}
             color="secondary"
-            text={questions[0].filter.right.btnTxt}
+            text={questions[questIndex].filter.right.btnTxt}
+            property={questions[questIndex].filter.right.property}
+            searchVal={questions[questIndex].filter.right.searchVal}
           />
-        </ChoiceBtnDiv>
+      </ChoiceBtnDiv>
     </>
   );
 };
