@@ -6,7 +6,7 @@ const TextDiv = ({children, parent}) => {
   const parentValues = {
     questions: {
       padding: "10vw",
-      bottom: 100,
+      bottom: 80,
       width: "80vw",
       position: "fixed",
     },
@@ -33,7 +33,7 @@ const TextDiv = ({children, parent}) => {
           width,
           paddingTop: "50px",
           backgroundImage:
-          "linear-gradient(0deg, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0) 100%)",
+          "linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0) 100%)",
         padding,
           
         }}
