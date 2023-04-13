@@ -27,6 +27,13 @@ const ImageBox = ({ alt, imagePath, parent = "questions" }) => {
       ? imagePath
       : undefined;
 
+    // const src =
+    // parent === "questions"
+    //   ? currentImage
+    //   : parent === "results"
+    //   ? imagePath
+    //   : undefined;
+  
   return (
     <Box
       component="img"
@@ -35,6 +42,7 @@ const ImageBox = ({ alt, imagePath, parent = "questions" }) => {
       sx={{
         objectFit: "cover",
         width: "95vw",
+        height: "100%",
         verticalAlign: "bottom",
       }}
     />
