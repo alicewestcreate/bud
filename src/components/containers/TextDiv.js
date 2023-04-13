@@ -8,7 +8,7 @@ const TextDiv = ({children, parent}) => {
       padding: "10vw",
       bottom: 30,
       width: "80vw",
-      position: "absolute",
+      position: "fixed",
     },
     results: {
       padding: "5vw",
