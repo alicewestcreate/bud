@@ -1,0 +1,179 @@
+[
+    {
+        "index": 0,
+        "main": {
+            "Q": "1Looking for something robust, and can hold its own?",
+            "img": "robustCactus.webp",
+            "filter": {
+                "left": {
+                    "btnTxt": "meh",
+                    "property": null,
+                    "searchVal": null,
+                    "feature": "No Feature"
+                },
+                "right": {
+                    "btnTxt": "gimme",
+                    "property": "Appeal",
+                    "searchVal": "Robustness",
+                    "feature": "Sturdy"
+                }
+            }
+        },
+        "sub": [
+            {
+                "Q": "This is a sub Question?",
+                "img": "robustCactus.webp",
+                "filter": {
+                    "left": {
+                        "btnTxt": "meh",
+                        "property": null,
+                        "searchVal": null,
+                        "feature": "No Feature"
+                    },
+                    "right": {
+                        "btnTxt": "gimme",
+                        "property": "Appeal",
+                        "searchVal": "Robustness",
+                        "feature": "Sturdy"
+                    }
+                }
+            },
+            {
+                "Q": "Looking for something robust, and can hold its own?",
+                "img": "robustCactus.webp",
+                "filter": {
+                    "left": {
+                        "btnTxt": "meh",
+                        "property": null,
+                        "searchVal": null,
+                        "feature": "No Feature"
+                    },
+                    "right": {
+                        "btnTxt": "gimme",
+                        "property": "Appeal",
+                        "searchVal": "Robustness",
+                        "feature": "Sturdy"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "index": 0,
+        "main": {
+            "Q": "2This is the next main question?",
+            "img": "robustCactus.webp",
+            "filter": {
+                "left": {
+                    "btnTxt": "meh",
+                    "property": null,
+                    "searchVal": null,
+                    "feature": "No Feature"
+                },
+                "right": {
+                    "btnTxt": "gimme",
+                    "property": "Appeal",
+                    "searchVal": "Robustness",
+                    "feature": "Sturdy"
+                }
+            }
+        },
+        "sub": [
+            {
+                "Q": "This is a sub Question?",
+                "img": "robustCactus.webp",
+                "filter": {
+                    "left": {
+                        "btnTxt": "meh",
+                        "property": null,
+                        "searchVal": null,
+                        "feature": "No Feature"
+                    },
+                    "right": {
+                        "btnTxt": "gimme",
+                        "property": "Appeal",
+                        "searchVal": "Robustness",
+                        "feature": "Sturdy"
+                    }
+                }
+            },
+            {
+                "Q": "Looking for something robust, and can hold its own?",
+                "img": "robustCactus.webp",
+                "filter": {
+                    "left": {
+                        "btnTxt": "meh",
+                        "property": null,
+                        "searchVal": null,
+                        "feature": "No Feature"
+                    },
+                    "right": {
+                        "btnTxt": "gimme",
+                        "property": "Appeal",
+                        "searchVal": "Robustness",
+                        "feature": "Sturdy"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "index": 0,
+        "main": {
+            "Q": "3This is the next main question?",
+            "img": "robustCactus.webp",
+            "filter": {
+                "left": {
+                    "btnTxt": "meh",
+                    "property": null,
+                    "searchVal": null,
+                    "feature": "No Feature"
+                },
+                "right": {
+                    "btnTxt": "gimme",
+                    "property": "Appeal",
+                    "searchVal": "Robustness",
+                    "feature": "Sturdy"
+                }
+            }
+        },
+        "sub": [
+            {
+                "Q": "This is a sub Question?",
+                "img": "robustCactus.webp",
+                "filter": {
+                    "left": {
+                        "btnTxt": "meh",
+                        "property": null,
+                        "searchVal": null,
+                        "feature": "No Feature"
+                    },
+                    "right": {
+                        "btnTxt": "gimme",
+                        "property": "Appeal",
+                        "searchVal": "Robustness",
+                        "feature": "Sturdy"
+                    }
+                }
+            },
+            {
+                "Q": "Looking for something robust, and can hold its own?",
+                "img": "robustCactus.webp",
+                "filter": {
+                    "left": {
+                        "btnTxt": "meh",
+                        "property": null,
+                        "searchVal": null,
+                        "feature": "No Feature"
+                    },
+                    "right": {
+                        "btnTxt": "gimme",
+                        "property": "Appeal",
+                        "searchVal": "Robustness",
+                        "feature": "Sturdy"
+                    }
+                }
+            }
+        ]
+    }
+]
