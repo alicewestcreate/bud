@@ -5,9 +5,9 @@ import TextDiv from "../../components/containers/TextDiv";
 import QuestionHeading from "../../components/copy/QuestionHeading";
 import ChoiceBtnDiv from "../../components/containers/ChoiceBtnDiv";
 import ChoiceButton from "../../components/buttons/ChoiceButton";
-import questions from "../../data/questions.json";
 
-const Questions = ({ showNextQuestion, questIndex, storePreference }) => {
+const Questions = ({ currentQuestion, indexState, storePreference }) => {
+  console.log(currentQuestion);
 
 
   return (
@@ -15,33 +15,37 @@ const Questions = ({ showNextQuestion, questIndex, storePreference }) => {
       <ContainerForImage parent={"questions"}>
         <ImageBox
           parent={"questions"}
-          imagePath={questions[questIndex].img}
+          imagePath={currentQuestion.img}
           alt={"Cactus"}
         />
       </ContainerForImage>
 
       <TextDiv parent={"questions"}>
-        <QuestionHeading question={questions[questIndex].question} />
+        <QuestionHeading question={currentQuestion.question} />
       </TextDiv>
 
       <ChoiceBtnDiv parent={"questions"}>
         <ChoiceButton
-          showNextQuestion={showNextQuestion}
+          // showNextQuestion={showNextQuestion}
+          // showSubQuestion = {showSubQuestion}
+          indexState = {indexState}
           storePreference={storePreference}
           color="third"
-          text={questions[questIndex].filter.left.btnTxt}
-          property={questions[questIndex].filter.left.property}
-          searchVal={questions[questIndex].filter.left.searchVal}
-          feature={questions[questIndex].filter.left.feature}
+          text={currentQuestion.filter.left.btnTxt}
+          property={currentQuestion.filter.left.property}
+          searchVal={currentQuestion.filter.left.searchVal}
+          feature={currentQuestion.filter.left.feature}
         />
         <ChoiceButton
-            showNextQuestion={showNextQuestion}
+            // showNextQuestion={showNextQuestion}
+            indexState = {indexState}
             storePreference={storePreference}
+            // showSubQuestion ={showSubQuestion}
             color="secondary"
-            text={questions[questIndex].filter.right.btnTxt}
-            property={questions[questIndex].filter.right.property}
-            searchVal={questions[questIndex].filter.right.searchVal}
-            feature={questions[questIndex].filter.right.feature}
+            text={currentQuestion.filter.right.btnTxt}
+            property={currentQuestion.filter.right.property}
+            searchVal={currentQuestion.filter.right.searchVal}
+            feature={currentQuestion.filter.right.feature}
 
           />
       </ChoiceBtnDiv>
