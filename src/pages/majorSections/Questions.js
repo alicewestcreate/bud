@@ -5,7 +5,6 @@ import TextDiv from "../../components/containers/TextDiv";
 import QuestionHeading from "../../components/copy/QuestionHeading";
 import ChoiceBtnDiv from "../../components/containers/ChoiceBtnDiv";
 import ChoiceButton from "../../components/buttons/ChoiceButton";
-import questions from "../../data/questions.json";
 
 const Questions = ({ functionsHandlers, currentQuestion, storePreference }) => {
 
