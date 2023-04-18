@@ -1,25 +1,16 @@
 import { Button } from '@mui/material';
 import React from 'react';
 
-const ChoiceButton = ({color, text, handleIt, storePreference, property, searchVal, feature }) => {
+const ChoiceButton = ({color, text, handleIt, handlePreferencesUpdate, propertyValue, searchValue, featureValue }) => {
 
-  // const buttonRef = useRef();
-
-  const HandleClick = (e) => {
+  const HandleClick = () => {
     handleIt()
-    const thisButton = e.target;
-    const propertyValue = thisButton.getAttribute('data-property');
-    const searchValue = thisButton.getAttribute('data-value');
-    const featureValue = thisButton.getAttribute('data-feature');
+    handlePreferencesUpdate(propertyValue, searchValue, featureValue)
 
-    storePreference(propertyValue, searchValue, featureValue)
   }
 
     return (
         <Button
-        data-feature={feature}
-        data-property={property}
-        data-value={searchVal}
 
         onClick={HandleClick}
         variant="contained"

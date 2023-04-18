@@ -1,14 +1,49 @@
-import React from "react";
+import React, {useContext, useState, useEffect} from "react";
 import ContainerForImage from "../../components/containers/ContainerForImage";
 import ImageBox from "../../components/imagesTags/ImageBox";
 import TextDiv from "../../components/containers/TextDiv";
 import QuestionHeading from "../../components/copy/QuestionHeading";
 import ChoiceBtnDiv from "../../components/containers/ChoiceBtnDiv";
 import ChoiceButton from "../../components/buttons/ChoiceButton";
+import QuizPreferences from "../../components/contexts/QuizPreferences";
 
-const Questions = ({ functionsHandlers, currentQuestion, storePreference }) => {
+const Questions = ({ functionsHandlers, currentQuestion }) => {
+
+
+ // eslint-disable-next-line no-unused-vars
+  const { userPreferences, setUserPreferences } = useContext(QuizPreferences); // Stores quizdata & transfered to results page.
+
+  const [quizData, setQuizData] = useState({ // store all properties searchvalues and features. 
+    allProperties: [],
+    allValues: [],
+    allFeatures: [],
+  });
+  
+  const handlePreferencesUpdate = (newProperty, newValue, newFeature ) => {
+
+    setQuizData(prevState => ({
+      allProperties: [...prevState.allProperties, newProperty],
+      allValues: [...prevState.allValues, newValue],
+      allFeatures: [...prevState.allFeatures, newFeature]
+        }));
+  console.log("updateing setQuiz");
+   setUserPreferences(quizData)
+
+  }
+
+  useEffect(() => {
+    console.log(quizData.allValues)
+
+  }, [quizData.allValues]);
+
+
+
+
+
 
   const[handleClickRight, handleClickLeft ] =  functionsHandlers
+
+
 
   return (
     <>
@@ -27,21 +62,21 @@ const Questions = ({ functionsHandlers, currentQuestion, storePreference }) => {
       <ChoiceBtnDiv parent={"questions"}>
         <ChoiceButton
           handleIt={handleClickLeft}
-          storePreference={storePreference}
+          handlePreferencesUpdate = {handlePreferencesUpdate}
           color="third"
           text={currentQuestion.filter.left.btnTxt}
-          property={currentQuestion.filter.left.property}
-          searchVal={currentQuestion.filter.left.searchVal}
-          feature={currentQuestion.filter.left.feature}
+          propertyValue={currentQuestion.filter.left.property}
+          searchValue={currentQuestion.filter.left.searchVal}
+          featureValue={currentQuestion.filter.left.feature}
         />
         <ChoiceButton
             handleIt={handleClickRight}
-            storePreference={storePreference}
+            handlePreferencesUpdate = {handlePreferencesUpdate}
             color="secondary"
             text={currentQuestion.filter.right.btnTxt}
-            property={currentQuestion.filter.right.property}
-            searchVal={currentQuestion.filter.right.searchVal}
-            feature={currentQuestion.filter.right.feature}
+            propertyValue={currentQuestion.filter.right.property}
+            searchValue={currentQuestion.filter.right.searchVal}
+            featureValue={currentQuestion.filter.right.feature}
 
           />
       </ChoiceBtnDiv>

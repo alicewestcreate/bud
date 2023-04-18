@@ -2,38 +2,38 @@
     {
         "index": 0,
         "main": {
-            "question": "MAIN Looking for something robust, and can hold its own?",
-            "img": "robustCactus.webp",
+            "question": "Will you remember to shower me like the gods?",
+            "img": "waterGods.webp",
             "filter": {
                 "left": {
                     "btnTxt": "meh",
-                    "property": null,
-                    "searchVal": null,
-                    "feature": "No Feature"
+                    "property": "Watering",
+                    "searchVal": ["Must dry between watering & Water only when dry", "Water only when dry & Must dry between watering"],
+                    "feature": "Low Maintenance"
                 },
                 "right": {
                     "btnTxt": "gimme",
-                    "property": "Appeal",
-                    "searchVal": "Robustness",
-                    "feature": "Sturdy"
+                    "property": "Watering",
+                    "searchVal": ["Keep moist between watering & Must not dry between watering", "Change water regularly in the cup & Water when soil is half dry"],
+                    "feature": "Worth The Maintenance"
                 }
             }
         },
         "sub": {
-            "question": "SUB Looking for something robust, and can hold its own?",
-            "img": "robustCactus.webp",
+            "question": "Or shall I pack enough to get through the droughts?",
+            "img": "succulent.webp",
             "filter": {
                 "left": {
                     "btnTxt": "meh",
-                    "property": null,
-                    "searchVal": null,
-                    "feature": "No Feature"
+                    "property": "Family",
+                    "searchVal": ["Agavaceae", "Liliaceae" ],
+                    "feature": "Hardy"
                 },
                 "right": {
                     "btnTxt": "gimme",
-                    "property": "Appeal",
-                    "searchVal": "Robustness",
-                    "feature": "Sturdy"
+                    "property": "Family",
+                    "searchVal": ["Cactaceae", "Asclepiadaceae"],
+                    "feature": "Store Water"
                 }
             }
         }
@@ -41,38 +41,38 @@
     {
         "index": 1,
         "main": {
-            "question": "MAIN A fellow sunseeker to catch the rays with?",
+            "question": "A fellow sunseeker to catch the rays with?",
             "img": "sunSeeker.webp",
             "filter": {
                 "left": {
                     "btnTxt": "meh",
-                    "property": null,
-                    "searchVal": null,
-                    "feature": "No Feature"
+                    "property": "Light tolered",
+                    "searchVal": ["Diffuse light ( Less than 5,300 lux / 500 fc)", "Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)"],
+                    "feature": "Shade"
                 },
                 "right": {
                     "btnTxt": "gimme",
                     "property": "Light ideal",
-                    "searchVal": "Full sun (+21,500 lux /+2000 fc )",
+                    "searchVal": ["Full sun (+21,500 lux /+2000 fc )"],
                     "feature": "Sunshine"
                 }
             }
         },
         "sub": {
-            "question": "SUB A fellow sunseeker to catch the rays with?",
-            "img": "sunSeeker.webp",
+            "question": "Or a vine that likes to hang back in the shade?",
+            "img": "hangingShade.webp",
             "filter": {
                 "left": {
                     "btnTxt": "meh",
-                    "property": null,
-                    "searchVal": null,
-                    "feature": "No Feature"
+                    "property": "Light ideal",
+                    "searchVal": ["Diffuse light ( Less than 5,300 lux / 500 fc)", "Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)", "Full sun (+21,500 lux /+2000 fc )"],
+                    "feature": "Multiple Sun"
                 },
                 "right": {
                     "btnTxt": "gimme",
-                    "property": "Light ideal",
-                    "searchVal": "Full sun (+21,500 lux /+2000 fc )",
-                    "feature": "Sunshine"
+                    "property": "Light tolered",
+                    "searchVal": ["Diffuse light ( Less than 5,300 lux / 500 fc)"],
+                    "feature": "Shade"
                 }
             }
         }
@@ -80,161 +80,44 @@
     {
         "index": 2,
         "main": {
-            "question": "MAIN Or more chilled, and likes to hang in the shade?",
-            "img": "shadyLeaves.webp",
-            "filter": {
-                "left": {
-                    "btnTxt": "meh",
-                    "property": null,
-                    "searchVal": null,
-                    "feature": "No Feature"
-                },
-                "right": {
-                    "btnTxt": "gimme",
-                    "property": "Light tolered",
-                    "searchVal": "Diffuse light ( Less than 5,300 lux / 500 fc)",
-                    "feature": "Shade Dweller"
-                }
-            }
-        },
-        "sub": {
-            "question": "SUB r more chilled, and likes to hang in the shade?",
-            "img": "shadyLeaves.webp",
-            "filter": {
-                "left": {
-                    "btnTxt": "meh",
-                    "property": null,
-                    "searchVal": null,
-                    "feature": "No Feature"
-                },
-                "right": {
-                    "btnTxt": "gimme",
-                    "property": "Light tolered",
-                    "searchVal": "Diffuse light ( Less than 5,300 lux / 500 fc)",
-                    "feature": "Shade Dweller"
-                }
-            }
-        }
-
-    },
-    {
-        "index": 3,
-        "main": {
-            "question": "MAIN Maybe something more on the wild side?",
-            "img": "wildFlower.webp",
-            "filter": {
-                "left": {
-                    "btnTxt": "meh",
-                    "property": null,
-                    "searchVal": null,
-                    "feature": "No Feature"
-                },
-                "right": {
-                    "btnTxt": "gimme",
-                    "property": "Blooming season",
-                    "searchVal": "Sporadic",
-                    "feature": "Wild"
-                }
-            }
-        },
-        "sub": {
-            "question": "SUB Maybe something more on the wild side?",
-            "img": "wildFlower.webp",
-            "filter": {
-                "left": {
-                    "btnTxt": "meh",
-                    "property": null,
-                    "searchVal": null,
-                    "feature": "No Feature"
-                },
-                "right": {
-                    "btnTxt": "gimme",
-                    "property": "Blooming season",
-                    "searchVal": "Sporadic",
-                    "feature": "Wild"
-                }
-            }
-        }
-    },
-    {
-        "index": 4,
-        "main": {
-            "question": "MAIN Perhaps more of a conversation starter? ",
+            "question": "Perhaps more of a conversation starter?",
             "img": "conversationStart.webp",
             "filter": {
                 "left": {
                     "btnTxt": "meh",
-                    "property": "Growth",
-                    "searchVal": "Fast",
-                    "feature": "No Feature"
+                    "property": "Appeal",
+                    "searchVal": ["Trunc"],
+                    "feature": "No Appeal"
                 },
                 "right": {
                     "btnTxt": "gimme",
                     "property": "Appeal",
-                    "searchVal": "Flower",
-                    "feature": "Flower"
+                    "searchVal": ["Flower", "Color"],
+                    "feature": "Special"
                 }
             }
         },
         "sub": {
-            "question": "SUB Perhaps more of a conversation starter? ",
-            "img": "conversationStart.webp",
+            "question": "Or a foliage that blends in the decor?",
+            "img": "foliage.webp",
             "filter": {
                 "left": {
                     "btnTxt": "meh",
-                    "property": "Growth",
-                    "searchVal": "Fast",
-                    "feature": "No Feature"
+                    "property": "Perfume",
+                    "searchVal": ["Delicate, comes from the Flowers"],
+                    "feature": "Smell Good"
                 },
                 "right": {
                     "btnTxt": "gimme",
                     "property": "Appeal",
-                    "searchVal": "Flower",
-                    "feature": "Flower"
-                }
-            }
-        }
-    },
-    {
-        "index": 5,
-        "main": {
-            "question": "MAIN Something a little sensational for the nose?",
-            "img": "fragrantRose.webp",
-            "filter": {
-                "left": {
-                    "btnTxt": "meh",
-                    "property": null,
-                    "searchVal": null,
-                    "feature": "No Feature"
-                },
-                "right": {
-                    "btnTxt": "gimme",
-                    "property": "Perfume",
-                    "searchVal": "Delicate, comes from the Flowers",
-                    "feature": "Perfume"
-                }
-            }
-        },
-        "sub": {
-            "question": "SUB Something a little sensational for the nose?",
-            "img": "fragrantRose.webp",
-            "filter": {
-                "left": {
-                    "btnTxt": "meh",
-                    "property": null,
-                    "searchVal": null,
-                    "feature": "No Feature"
-                },
-                "right": {
-                    "btnTxt": "gimme",
-                    "property": "Perfume",
-                    "searchVal": "Delicate, comes from the Flowers",
-                    "feature": "Perfume"
+                    "searchVal": ["Foliage","Robustness"],
+                    "feature": "Foliage"
                 }
             }
         }
 
     }
+
 ]
 
 

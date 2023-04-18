@@ -22,12 +22,12 @@ const ResultsCard = ({ plantIndex, showNextCard }) => {
         <ImageBox parent={"results"} imagePath={plantIndex.Img} alt={""} />
       </ContainerForImage>
       <TextDiv parent={"results"}>
-        <PlantName dummyInfo={getName(plantIndex)} />
+        <PlantName plantName={getName(plantIndex)} />
         <InfoButton
           setDisplayFeatures={setDisplayFeatures}
           displayFeatures={displayFeatures}
         />
-        <PropertyTags properties={plantIndex.matchdOn} />
+        <PropertyTags properties={plantIndex.matchedOn} />
         {displayFeatures && <Features plantIndex={plantIndex} />}
       </TextDiv>
 
