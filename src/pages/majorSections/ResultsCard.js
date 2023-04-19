@@ -10,6 +10,7 @@ import LikeDislikeButton from "../../components/buttons/LikeDislikeButton";
 
 import Features from "./Features";
 import getName from "../majorfunctions/getName";
+import { Box } from "@mui/system";
 
 const ResultsCard = ({ plantIndex, showNextCard }) => {
   const [displayFeatures, setDisplayFeatures] = useState(false);
@@ -17,7 +18,8 @@ const ResultsCard = ({ plantIndex, showNextCard }) => {
   console.log("matched on", plantIndex);
 
   return (
-    <>
+
+    <Box sx={{display: "flex", flexDirection: "column"}}>
       <ContainerForImage parent={"results"}>
         <ImageBox parent={"results"} imagePath={plantIndex.Img} alt={""} />
       </ContainerForImage>
@@ -41,7 +43,7 @@ const ResultsCard = ({ plantIndex, showNextCard }) => {
           text={"yes"}
         ></LikeDislikeButton>
       </ChoiceBtnDiv>
-    </>
+      </Box>
   );
 };
 

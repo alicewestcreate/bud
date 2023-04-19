@@ -7,33 +7,40 @@
             "filter": {
                 "left": {
                     "btnTxt": "meh",
-                    "property": "Watering",
-                    "searchVal": ["Must dry between watering & Water only when dry", "Water only when dry & Must dry between watering"],
-                    "feature": "Low Maintenance"
+                    "property": "",
+                    "searchVal": [],
+                    "feature": ""
                 },
                 "right": {
                     "btnTxt": "gimme",
                     "property": "Watering",
-                    "searchVal": ["Keep moist between watering & Must not dry between watering", "Change water regularly in the cup & Water when soil is half dry"],
-                    "feature": "Worth The Maintenance"
+                    "searchVal": [
+                        "Keep moist between watering & Must not dry between watering", 
+                        "Change water regularly in the cup & Water when soil is half dry",
+                        "Keep moist between watering & Water when soil is half dry"
+                    ,   "Water when soil is half dry & Change water regularly in the cup"],
+                    "feature": "Freq. Misting"
                 }
             }
         },
         "sub": {
-            "question": "Or shall I pack enough to get through the droughts?",
+            "question": "Or is it best if I hold my own water?",
             "img": "succulent.webp",
             "filter": {
                 "left": {
                     "btnTxt": "meh",
-                    "property": "Family",
-                    "searchVal": ["Agavaceae", "Liliaceae" ],
-                    "feature": "Hardy"
+                    "property": "Watering",
+                    "searchVal": ["Keep moist between watering & Can dry between watering",
+                    "Water when soil is half dry & Can dry between watering",
+                    "Water when soil is half dry & Water only when dry",
+                    "Can dry between watering & Water when soil is half dry"],
+                    "feature": "Low-Maintenance"
                 },
                 "right": {
                     "btnTxt": "gimme",
                     "property": "Family",
-                    "searchVal": ["Cactaceae", "Asclepiadaceae"],
-                    "feature": "Store Water"
+                    "searchVal": ["Cactaceae", "Agavaceae", "Arecaceae", "Euphorbiaceae", "Asclepiadaceae", "Bromeliaceae", "Apocynaceae", "Araliaceae", "Moraceae", "Palmae", "Melastomataceae", "Vitaceae"],
+                    "feature": "Drought Tolerant"
                 }
             }
         }
@@ -46,15 +53,15 @@
             "filter": {
                 "left": {
                     "btnTxt": "meh",
-                    "property": "Light tolered",
-                    "searchVal": ["Diffuse light ( Less than 5,300 lux / 500 fc)", "Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)"],
-                    "feature": "Shade"
+                    "property": "",
+                    "searchVal": [],
+                    "feature": "" 
                 },
                 "right": {
                     "btnTxt": "gimme",
                     "property": "Light ideal",
-                    "searchVal": ["Full sun (+21,500 lux /+2000 fc )"],
-                    "feature": "Sunshine"
+                    "searchVal": ["Full sun (+21,500 lux /+2000 fc )", "Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)"],
+                    "feature": "Sun Worshiper"
                 }
             }
         },
@@ -65,14 +72,14 @@
                 "left": {
                     "btnTxt": "meh",
                     "property": "Light ideal",
-                    "searchVal": ["Diffuse light ( Less than 5,300 lux / 500 fc)", "Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)", "Full sun (+21,500 lux /+2000 fc )"],
-                    "feature": "Multiple Sun"
+                    "searchVal": ["Diffuse light ( Less than 5,300 lux / 500 fc)", "Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)"],
+                    "feature": "Varied Sun"
                 },
                 "right": {
                     "btnTxt": "gimme",
                     "property": "Light tolered",
-                    "searchVal": ["Diffuse light ( Less than 5,300 lux / 500 fc)"],
-                    "feature": "Shade"
+                    "searchVal": ["Diffuse light ( Less than 5,300 lux / 500 fc)", "Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)"],
+                    "feature": "Shade Seeker"
                 }
             }
         }
@@ -85,15 +92,15 @@
             "filter": {
                 "left": {
                     "btnTxt": "meh",
-                    "property": "Appeal",
-                    "searchVal": ["Trunc"],
-                    "feature": "No Appeal"
+                    "property": "",
+                    "searchVal": [],
+                    "feature": ""
                 },
                 "right": {
                     "btnTxt": "gimme",
                     "property": "Appeal",
-                    "searchVal": ["Flower", "Color"],
-                    "feature": "Special"
+                    "searchVal": ["Flower", "Color", "Style"],
+                    "feature": "Conversation Starter"
                 }
             }
         },
@@ -110,8 +117,8 @@
                 "right": {
                     "btnTxt": "gimme",
                     "property": "Appeal",
-                    "searchVal": ["Foliage","Robustness"],
-                    "feature": "Foliage"
+                    "searchVal": ["Foliage", "Robustness", "Trunc", "Bearing"],
+                    "feature": "Crowd Pleaser"
                 }
             }
         }

@@ -4,7 +4,7 @@ import { AppBar } from "@mui/material";
 
 const NavBar = () => {
   return (
-    <AppBar position="fixed" color="primary" sx={{ height: "35px", top: "auto", bottom: 0, display: 'flex', justifyContent: 'center' }}>
+    <AppBar color="primary" sx={{ height: "35px", top: "auto", bottom: 0, display: 'flex', justifyContent: 'center',  position:"fixed" }}>
         <NavItem></NavItem>
     </AppBar>
   );

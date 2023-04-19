@@ -12,12 +12,12 @@ const PageContainer = ({children, parent = "questions"}) => {
 
 
     return (
-        <Box
+        <Box id="PAGECONTAINER"
         sx={{
-          // position: "fixed",
           display: "flex",
-          alignContent: "center",
-          flexDirection: "column",
+          // alignContent: "center",
+          justifyContent: "center",
+          // flexDirection: "column",
           marginTop: "56px",
           height,
         }}
