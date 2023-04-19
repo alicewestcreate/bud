@@ -7,15 +7,15 @@ import Home from './pages/Home';
 import Quiz from './pages/Quiz';
 import Results from './pages/Results';
 import News from './pages/News'; 
-import QuizContext from './pages/QuizContext';
+import QuizPreferences from './components/contexts/QuizPreferences';
 
 
 function App() {
-  const [collectedVariables, setCollectedVariables] = useState({});
+  const [userPreferences, setUserPreferences] = useState({});
 
 
   return (
-    <QuizContext.Provider value={{ collectedVariables, setCollectedVariables }}>
+    <QuizPreferences.Provider value={{ userPreferences, setUserPreferences }}>
     <BrowserRouter>
     <ThemeProvider theme={theme}>
     <Routes>
@@ -28,7 +28,7 @@ function App() {
     <Layout/>
     </ThemeProvider>
     </BrowserRouter>
-    </QuizContext.Provider>
+    </QuizPreferences.Provider>
 
    
   );
