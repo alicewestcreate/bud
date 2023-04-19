@@ -30,7 +30,7 @@ const Quiz = () => {
   useEffect(() => {
     setUserPreferences(quizData)
     console.log(userPreferences);
-  }, [quizData]);
+  }, [quizData, setUserPreferences, userPreferences]);
 
 
 
