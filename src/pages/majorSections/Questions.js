@@ -1,42 +1,39 @@
-import React, {useContext, useState, useEffect} from "react";
+import React from "react";
 import ContainerForImage from "../../components/containers/ContainerForImage";
 import ImageBox from "../../components/imagesTags/ImageBox";
 import TextDiv from "../../components/containers/TextDiv";
 import QuestionHeading from "../../components/copy/QuestionHeading";
 import ChoiceBtnDiv from "../../components/containers/ChoiceBtnDiv";
 import ChoiceButton from "../../components/buttons/ChoiceButton";
-import QuizPreferences from "../../components/contexts/QuizPreferences";
 
-const Questions = ({ functionsHandlers, currentQuestion }) => {
+const Questions = ({ functionsHandlers, currentQuestion, handlePreferencesUpdate}) => {
 
 
  // eslint-disable-next-line no-unused-vars
-  const { userPreferences, setUserPreferences } = useContext(QuizPreferences); // Stores quizdata & transfered to results page.
+  // const { userPreferences, setUserPreferences } = useContext(QuizPreferences); // Stores quizdata & transfered to results page.
 
-  const [quizData, setQuizData] = useState({ // store all properties searchvalues and features. 
-    allProperties: [],
-    allValues: [],
-    allFeatures: [],
-  });
+  // const [quizData, setQuizData] = useState({ // store all properties searchvalues and features. 
+  //   allProperties: [],
+  //   allValues: [],
+  //   allFeatures: [],
+  // });
   
-  const handlePreferencesUpdate = (newProperty, newValue, newFeature ) => {
+  // const handlePreferencesUpdate = (newProperty, newValue, newFeature ) => {
 
-    setQuizData(prevState => ({
-      allProperties: [...prevState.allProperties, newProperty],
-      allValues: [...prevState.allValues, newValue],
-      allFeatures: [...prevState.allFeatures, newFeature]
-        }));
-  console.log("updateing setQuiz");
-   setUserPreferences(quizData)
+  //   setQuizData(prevState => ({
+  //     allProperties: [...prevState.allProperties, newProperty],
+  //     allValues: [...prevState.allValues, newValue],
+  //     allFeatures: [...prevState.allFeatures, newFeature]
+  //       }));
+  // console.log("updateing setQuiz");
+  //  setUserPreferences(quizData)
 
-  }
+  // }
 
-  useEffect(() => {
-    console.log(quizData.allValues)
+  // useEffect(() => {
+  //   console.log(quizData.allValues)
 
-  }, [quizData.allValues]);
-
-
+  // }, [quizData.allValues]);
 
 
 
