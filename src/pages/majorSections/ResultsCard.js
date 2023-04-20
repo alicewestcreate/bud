@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import ContainerForImage from "../../components/containers/ContainerForImage";
 import ImageBox from "../../components/imagesTags/ImageBox";
-import TextDiv from "../../components/containers/TextDiv";
 import PlantName from "../../components/copy/PlantName";
 import InfoButton from "../../components/buttons/InfoButton";
 import PropertyTags from "../../components/buttons/PropertyTags";
-import ChoiceBtnDiv from "../../components/containers/ChoiceBtnDiv";
 import LikeDislikeButton from "../../components/buttons/LikeDislikeButton";
 
 import Features from "./Features";

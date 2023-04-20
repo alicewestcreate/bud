@@ -3,12 +3,12 @@ import React from 'react';
 
 const PageContainer = ({children, parent = "questions"}) => {
 
-  const height = 
-  parent === "questions"
-  ? `${"calc(100vh - 112px)"}`
-  : parent === "results"
-  ? `${"auto"}`
-  : undefined;
+  // const height = 
+  // parent === "questions"
+  // ? `${"calc(100vh - 112px)"}`
+  // : parent === "results"
+  // ? `${"auto"}`
+  // : undefined;
 
 
     return (
