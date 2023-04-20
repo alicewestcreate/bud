@@ -8,18 +8,23 @@ const PageContainer = (props) => {
   
     const styles = {
       display: "flex",
+      margin: " 0 10px",
       alignItems: "center",
       justifyContent: "center",
       width: "100vw",
+      height: "80vh", //"calc(100vh - 200px)",
+      
       ...(isPortrait
         ? {
             flexDirection: "column",
-            height: "80vh",
+            // height: "80vh",
             padding: "2vw",
           }
         : isLandscape
         ? {
+            paddingTop: "50px",
             flexDirection: "row",
+            overflow: "hidden",
           }
         : {}),
     };

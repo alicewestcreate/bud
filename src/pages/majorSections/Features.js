@@ -13,7 +13,7 @@ import SpaIcon from '@mui/icons-material/Spa'; // Blooming Season
 
 const Features = ({ plantIndex }) => {
   return (
-    <Box sx={{ width: "90vw", pb:10}}>
+    <Box>
         <Feature
         icon={<AttractionsIcon sx={{ px: 2 }} />}
         heading={"Attraction"}

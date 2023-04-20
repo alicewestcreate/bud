@@ -11,6 +11,12 @@ import LikeDislikeButton from "../../components/buttons/LikeDislikeButton";
 import Features from "./Features";
 import getName from "../majorfunctions/getName";
 import { Box } from "@mui/system";
+import PageContainer from "../../components/PageContainer";
+import ImageContainer from "../../components/ImageContainer";
+import ImageFrame from "../../components/ImageFrame";
+import TextContainer from "../../components/TextContainer";
+import HeadingFrame from "../../components/HeadingFrame";
+import QuizButtonContainer from "../../components/QuizButtonContainer";
 
 const ResultsCard = ({ plantIndex, showNextCard }) => {
   const [displayFeatures, setDisplayFeatures] = useState(false);
@@ -18,32 +24,42 @@ const ResultsCard = ({ plantIndex, showNextCard }) => {
   console.log("matched on", plantIndex);
 
   return (
+    <PageContainer parent={"plant"}>
+      <ImageContainer>
+        <ImageFrame parent={"plant"}>
+          <ImageBox parent={"results"} imagePath={plantIndex.Img} alt={""} />
+        </ImageFrame>
+      </ImageContainer>
 
-    <Box sx={{display: "flex", flexDirection: "column"}}>
-      <ContainerForImage parent={"results"}>
-        <ImageBox parent={"results"} imagePath={plantIndex.Img} alt={""} />
-      </ContainerForImage>
-      <TextDiv parent={"results"}>
-        <PlantName plantName={getName(plantIndex)} />
-        <InfoButton
-          setDisplayFeatures={setDisplayFeatures}
-          displayFeatures={displayFeatures}
-        />
-        <PropertyTags properties={plantIndex.matchedOn} />
-        {displayFeatures && <Features plantIndex={plantIndex} />}
-      </TextDiv>
+      <TextContainer parent={"plant"}>
 
-      <ChoiceBtnDiv parent={"results"}>
-        <LikeDislikeButton
-          showNextCard={showNextCard}
-          text={"no"}
-        ></LikeDislikeButton>
-        <LikeDislikeButton
-          showNextCard={showNextCard}
-          text={"yes"}
-        ></LikeDislikeButton>
-      </ChoiceBtnDiv>
-      </Box>
+        <HeadingFrame parent={"plant"}>
+          
+          <Box sx={{display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems:"flex-start"}}>
+          <PlantName plantName={getName(plantIndex)} />
+
+          <InfoButton
+            setDisplayFeatures={setDisplayFeatures}
+            displayFeatures={displayFeatures}
+          />
+          </Box>
+          <Box sx={{display:"flex" }}>
+          <PropertyTags properties={plantIndex.matchedOn} />
+
+          
+          </Box>
+          {displayFeatures && <Features plantIndex={plantIndex} />}
+
+     
+        </HeadingFrame>
+        <QuizButtonContainer parent={"plant"}>
+          <LikeDislikeButton showNextCard={showNextCard} text={"no"}></LikeDislikeButton>
+          <LikeDislikeButton showNextCard={showNextCard} text={"yes"}></LikeDislikeButton>
+        </QuizButtonContainer>
+      </TextContainer>
+
+
+    </PageContainer>
   );
 };
 

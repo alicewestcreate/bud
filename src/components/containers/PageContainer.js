@@ -19,7 +19,7 @@ const PageContainer = ({children, parent = "questions"}) => {
           justifyContent: "center",
           // flexDirection: "column",
           marginTop: "56px",
-          height,
+          // height,
         }}
       >
         {children}

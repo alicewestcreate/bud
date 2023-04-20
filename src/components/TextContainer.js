@@ -9,15 +9,16 @@ const TextContainer = (props) => {
     const styles = {
         display: "flex",
         flexDirection: "column",
+        width:"100%",
         ...(isPortrait
           ? {
-            alignItems: "flex-end",
+            // alignItems: "flex-end",
             justifyContent: "space-between",
-            height: "40vh",
+            height: props.parent === "quiz" ? "40vh" : "35vh",
             gap: 3,
-            padding: "0 7vw",
-            paddingTop: "5vh",
-            marginTop: "-40vh",
+            padding: "0 10px",
+            paddingTop: props.parent === "quiz" ? "5vh" : "0",
+            marginTop: props.parent === "quiz" ? "-40vh" : "0",
             backgroundImage: "linear-gradient(0deg, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0) 100%)",
             }
           : isLandscape
@@ -25,7 +26,7 @@ const TextContainer = (props) => {
             height: "90vh",
             alignItems: "center",
             justifyContent: "center",
-            flex: 1, 
+            flex: 1,
             }
           : {}),
       };
@@ -33,7 +34,7 @@ const TextContainer = (props) => {
     
     return (
         <Box
-        className="imageFrame"
+        className="TextContainer"
         sx={styles}
        > 
        {props.children}

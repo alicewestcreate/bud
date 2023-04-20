@@ -14,11 +14,18 @@ const QuizButtonContainer = (props) => {
     ...(isPortrait
       ? {
           width: "100%",
+          pt:2,
+          position: props.parent === "quiz" ? "inherit" : "sticky",
+          bottom: props.parent === "quiz" ? "auto" : "80px",
+          left: props.parent === "quiz" ? "auto" : "0",
+          width: "80%",
+          alignSelf: "center",
+
         }
       : isLandscape
       ? {
           width: "80%",
-          pt: 10,
+          pt: 5,
         }
       : {}),
   };
