@@ -11,15 +11,19 @@ const QuizButtonContainer = (props) => {
     display: "flex",
     flexDirection: "row",
     alignItems: "flex-end",
+    backgroundImage: "linear-gradient(0deg, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0.7) 90%, rgba(255, 255, 255, 0) 100%)",
+    // paddingBottom: 
+    // bgcolor: "black",
     ...(isPortrait
       ? {
           // width: "100%",
           pt:2,
           position: props.parent === "quiz" ? "sticky" : "sticky",
-          bottom: props.parent === "quiz" ? "80px" : "80px",
+          bottom: props.parent === "quiz" ? "80px" : "0",
           left: props.parent === "quiz" ? "0" : "0",
           width: "80%",
           alignSelf: "center",
+          padding: props.parent === "quiz" ? "auto" : "40px 10% 80px 10%",
 
         }
       : isLandscape
@@ -31,7 +35,7 @@ const QuizButtonContainer = (props) => {
   };
 
   return (
-    <Box className="" sx={styles}>
+    <Box className="ButtonBox" sx={styles}>
       {props.children}
     </Box>
   );
