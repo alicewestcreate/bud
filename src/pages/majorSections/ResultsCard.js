@@ -50,8 +50,8 @@ const ResultsCard = ({ plantIndex, showNextCard }) => {
      
         </HeadingFrame>
         <QuizButtonContainer parent={"plant"}>
-          <LikeDislikeButton showNextCard={showNextCard} text={"no"}></LikeDislikeButton>
-          <LikeDislikeButton showNextCard={showNextCard} text={"yes"}></LikeDislikeButton>
+          <LikeDislikeButton showNextCard={showNextCard} text={"no"} color={"third"}></LikeDislikeButton>
+          <LikeDislikeButton showNextCard={showNextCard} text={"yes"} color={"secondary"}></LikeDislikeButton>
         </QuizButtonContainer>
       </TextContainer>
 

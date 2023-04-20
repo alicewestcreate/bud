@@ -13,12 +13,15 @@ const PageContainer = (props) => {
       justifyContent: "center",
       width: "100vw",
       height: "80vh", //"calc(100vh - 200px)",
+
       
       ...(isPortrait
         ? {
             flexDirection: "column",
             // height: "80vh",
             padding: "2vw",
+            overflowX: "clip",
+
           }
         : isLandscape
         ? {
