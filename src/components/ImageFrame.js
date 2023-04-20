@@ -11,15 +11,18 @@ const ImageFrame = (props) => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        borderRadius: "0 10rem 0 0",
+        borderRadius: props.parent === "quiz" ? "0 10rem 0 0" : "0 0 30rem 30rem",
         overflow: "hidden",
         ...(isPortrait
           ? {
-            height: "75vh",
+            height: props.parent === "quiz" ? "75vh" : "95vw",
+            width: props.parent === "quiz" ? "auto" : "95vw",
             }
           : isLandscape
           ? {
-            maxHeight: "100%",
+            maxHeight: props.parent === "quiz" ? "100%" : "100vw",
+            width: props.parent === "quiz" ? "100%" : "100vw",
+            
             }
           : {}),
       };

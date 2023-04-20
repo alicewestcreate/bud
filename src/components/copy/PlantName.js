@@ -8,7 +8,7 @@ const PlantName = ({plantName}) => {
         variant="h1"
         textAlign="left"
         lineHeight={1.3}
-        sx={{ py: 2 }}
+        sx={{ py: 2}}
       >
         {plantName}
       </Typography>

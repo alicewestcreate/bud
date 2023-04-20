@@ -3,19 +3,24 @@ import { useMediaQuery } from "@mui/material";
 import React from "react";
 
 const QuestionHeading = (props) => {
-  const isPortrait = useMediaQuery("(orientation: portrait)");
-  const isLandscape = useMediaQuery("(orientation: landscape)");
+  const isMobilePortrait = useMediaQuery("(max-width: 767px) and (orientation: portrait)");
+  const isMobileLandscape = useMediaQuery("(max-width: 900px) and (orientation: landscape)");
+  const isDesktopLandscape = useMediaQuery("(min-width: 901px) and (orientation: landscape)");
 
   const styles = {
     marginTop: "auto",
-    ...(isPortrait
+    ...(isMobilePortrait
       ? {
-        fontSize: "3rem",
+        fontSize: "200%",
         }
-      : isLandscape
+      : isMobileLandscape
       ? {
-        fontSize: "4rem",
+        fontSize: "200%",
         }
+      : isDesktopLandscape
+        ? {
+          fontSize: "400%",
+          }
       : {}),
   };
 

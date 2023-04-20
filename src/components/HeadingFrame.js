@@ -8,21 +8,27 @@ const HeadingFrame = (props) => {
 
   const styles = {
     display: "flex",
-
+    flexDirection: "column",
     ...(isPortrait
       ? {
           flexGrow: 1,
+          justifyContent: "flex-end",
+          paddingBottom: props.parent === "quiz" ? "auto" : "100px",
+          width: "80%",
+          alignSelf: "center",
+          
         }
       : isLandscape
       ? {
-          padding: "0 100px 0 50px",
+          padding: props.parent === "quiz" ? "0 100px 0 50px" : "100px 0 0 0",
           width: "80%",
+          overflow: props.parent === "quiz" ? "none" : "scroll",
         }
       : {}),
   };
 
   return (
-    <Box className="imageFrame" sx={styles}>
+    <Box className="headingFrame" sx={styles}>
       {props.children}
     </Box>
   );

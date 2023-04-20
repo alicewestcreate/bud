@@ -20,19 +20,20 @@ const Questions = ({
   const [handleClickRight, handleClickLeft] = functionsHandlers;
     return (
       <>
-      <PageContainer>
+      <PageContainer parent={"quiz"}>
           <ImageContainer>
-            <ImageFrame>
+            <ImageFrame  parent={"quiz"}> 
               <ImageBox className="ImageBox" parent={"questions"} imagePath={currentQuestion.img} alt={"Cactus"}/>
             </ImageFrame>
           </ImageContainer>
-          <TextContainer>
-            <HeadingFrame>
+          <TextContainer parent={"quiz"}>
+            <HeadingFrame parent={"quiz"}>
               <QuestionHeading>
                 {currentQuestion.question}
                 </QuestionHeading>
               </HeadingFrame>
-              <QuizButtonContainer> 
+              
+              <QuizButtonContainer parent={"quiz"}> 
               <ChoiceButton
                 handleIt={handleClickLeft}
                 handlePreferencesUpdate={handlePreferencesUpdate}

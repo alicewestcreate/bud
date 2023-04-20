@@ -11,18 +11,19 @@ const InfoButton = ({displayFeatures, setDisplayFeatures }) => {
     return (
         <Box
         onClick={() => handleClick()}
+        
         sx={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          bgcolor: "black",
+          flexShrink: 0,
+          bgcolor: "#FE267B",
           color: "white",
-          position: "absolute",
-          right: 20,
-          top: "45px",
-          borderRadius: "50%",
+          borderRadius: "50px",
           height: "25px",
           width: "25px",
+ 
+    
         }}
       >
         i

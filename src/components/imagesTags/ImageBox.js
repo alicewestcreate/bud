@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box } from "@mui/system";
 
-const ImageBox = ({ alt, imagePath, parent = "questions" }) => {
-
+const ImageBox = ({ alt, imagePath, parent }) => {
   const [currentImage, setImage] = useState();
 
   useEffect(
@@ -20,26 +19,36 @@ const ImageBox = ({ alt, imagePath, parent = "questions" }) => {
     [imagePath]
   );
 
-  const src =
-    parent === "questions"
-      ? currentImage
-      : parent === "results"
-      ? imagePath
-      : undefined;
-  
+  const parentValues = {
+    questions: {
+      src: currentImage,
+      width: "150%",
+      height: "150%",
+
+    },
+    results: {
+      src: imagePath,
+      width: "100%",
+      height: "100%",
+
+    },
+  };
+
+  const parentObject = parentValues[parent] || {};
+  const { src, width, height} = parentObject;
+
   return (
     <Box
       component="img"
-      src={src}
+      src = {src}
       alt={alt}
       sx={{
-        objectFit: "cover", 
-        width: "150%",
-        height: "150%",
+        objectFit: "cover",
+        width,
+        height,
         maxWidth: "none",
         maxHeight: "none",
         objectPosition: "center",
-      
       }}
     />
   );
