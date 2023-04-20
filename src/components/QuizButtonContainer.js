@@ -13,7 +13,7 @@ const QuizButtonContainer = (props) => {
     alignItems: "flex-end",
     ...(isPortrait
       ? {
-          width: "100%",
+          // width: "100%",
           pt:2,
           position: props.parent === "quiz" ? "inherit" : "sticky",
           bottom: props.parent === "quiz" ? "auto" : "80px",

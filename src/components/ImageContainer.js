@@ -17,7 +17,7 @@ const ImageContainer = (props) => {
           flex: 1,
           width: "47vw",
           height: "90vh",
-          flex: "0 0 auto",
+          // flex: "0 0 auto",
         }
       : {}),
   };
