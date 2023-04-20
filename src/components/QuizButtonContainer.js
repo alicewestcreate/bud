@@ -15,9 +15,9 @@ const QuizButtonContainer = (props) => {
       ? {
           // width: "100%",
           pt:2,
-          position: props.parent === "quiz" ? "inherit" : "sticky",
-          bottom: props.parent === "quiz" ? "auto" : "80px",
-          left: props.parent === "quiz" ? "auto" : "0",
+          position: props.parent === "quiz" ? "sticky" : "sticky",
+          bottom: props.parent === "quiz" ? "80px" : "80px",
+          left: props.parent === "quiz" ? "0" : "0",
           width: "80%",
           alignSelf: "center",
 
